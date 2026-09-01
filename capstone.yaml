@@ -1,0 +1,15 @@
+version: "1.0"
+name: "Embeddable Widget & Lead-Capture Platform"
+base_url: "http://localhost:3000"
+run: "node src/server.js"
+seed: "node src/db/seed.js"
+test: "node test-probes.js"
+
+endpoints:
+  health: "GET /health"
+  widgets_crud: "POST /api/v1/widgets"
+  embed_config: "GET /public/widgets/:id/config"
+  embed_script: "GET /public/widget.v1.js"
+  submit: "POST /api/v1/submissions"
+  dashboard_stats: "GET /api/v1/dashboard/stats"
+  dashboard_submissions: "GET /api/v1/dashboard/submissions"

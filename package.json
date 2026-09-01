@@ -1,0 +1,26 @@
+{
+  "name": "embeddable-widget-platform",
+  "version": "1.0.0",
+  "description": "Embeddable Widget & Lead-Capture Platform Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node src/db/seed.js",
+    "test": "node test-probes.js"
+  },
+  "keywords": [
+    "widget",
+    "lead-capture",
+    "embed",
+    "express",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2"
+  }
+}
